@@ -2,8 +2,8 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
     var currentPopup = undefined;
     var isCoWebSiteOpened =  false;
-    var urlMusikClassic = "https://www.youtube.com/embed/B1XNDChNrvs";
-    var urlMusikModern = ""https://www.youtube.com/embed/B1XNDChNrvs"";
+    var urlMusikClassic ="https://www.youtube-nocookie.com/embed/5kRmqOSgapg?autoplay=1";
+    var urlMusikModern = "https://www.youtube-nocookie.com/embed/5kRmqOSgapg?autoplay=1";
 
     function closePopUp(){
         if (currentPopup !== undefined) {
@@ -23,7 +23,7 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
             {
                 label: "Her damit!",
                 callback: (popup => {
-                    WA.nav.openCoWebSite(urlMusikClassic);
+                    WA.nav.openCoWebSite(urlMusikClassic, false, "autoplay; encrypted-media");
                     isCoWebSiteOpened = true;
                     closePopUp();
                 })
@@ -44,7 +44,7 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
             {
                 label: "Her damit!",
                 callback: (popup => {
-                    WA.nav.openCoWebSite(urlMusikModern);
+                    WA.nav.openCoWebSite(urlMusikModern, false, "autoplay; encrypted-media");
                     isCoWebSiteOpened = true;
                     closePopUp();
                 })
