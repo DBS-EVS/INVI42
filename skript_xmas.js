@@ -2,8 +2,8 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
     var currentPopup = undefined;
     var isCoWebSiteOpened =  false;
-    var urlMusikClassic = "https://open.spotify.com/embed/playlist/37i9dQZF1DX1LCddwjCqDK?utm_source=generator";
-    var urlMusikModern = "https://open.spotify.com/embed/playlist/37i9dQZF1DX3h1vasAdBTc?utm_source=generator";
+    var urlMusikClassic = "https://www.youtube.com/embed/B1XNDChNrvs";
+    var urlMusikModern = ""https://www.youtube.com/embed/B1XNDChNrvs"";
 
     function closePopUp(){
         if (currentPopup !== undefined) {
